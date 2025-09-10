@@ -11,7 +11,7 @@ headers = {
 
 text = "I love this movie! It was fantastic"
 
-response = requests.post(api_url, headers, json={"inputs": text})
+response = requests.post(api_url, headers = headers, json={"inputs": text})
 
 if response.status_code == 200:
     result = response.json()
